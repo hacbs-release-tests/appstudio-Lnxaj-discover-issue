@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-mznz
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/hacbs-release-tests/happy-path-ahcm-tenant/appstudio/dc-metro-map-mznz@sha256:2a0d47dfda4ef2545abec903c7fa3630eb5cec200d91fb03d8b830d799ca12b9
+        name: my-nodejs
+        resources: {}
+status: {}
